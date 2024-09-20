@@ -1,0 +1,142 @@
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #0ec8e5;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-size: 1000px 150px;
+    bottom: 0;
+    left: 0;
+}
+
+#wave1 {
+    background: url('../../../public/images/wave.png');
+    z-index: 1000;
+    opacity: 1;
+    animation: animateWave 4s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0;
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-section {
+    margin: 20px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.footer-section p {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff994f;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin: 10px 0;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #ff994f;
+}
+
+.contact-form .text-input {
+
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #006090;
+    color: #ffffff;
+}
+
+.contact-form .text-input::placeholder {
+    color: #ccc;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff994f;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form .btn:hover {
+    background-color: #fa6d86;
+}
+
+.footer-bottom {
+    background-color: #0ec8e5;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
